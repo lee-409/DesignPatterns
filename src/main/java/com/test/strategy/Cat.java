@@ -1,6 +1,6 @@
 package com.test.strategy;
 
-public class Cat {
+public class Cat implements Comparable{
     private int weight;
     private int height;
 
@@ -8,7 +8,10 @@ public class Cat {
         this.weight = weight;
         this.height = height;
     }
-    public int compareTo(Cat c){
+
+    @Override
+    public int compareTo(Object o){
+        Cat c = (Cat) o;
         if (this.weight < c.weight){
             return -1;
         }else if (this.weight > c.weight){
