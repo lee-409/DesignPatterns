@@ -1,7 +1,7 @@
 package com.test.strategy;
 
 public class Dog implements Comparable<Dog>{
-    private int food;
+    public int food;
 
     public Dog(int food) {
         this.food = food;
