@@ -1,5 +1,5 @@
 package com.test.strategy;
 
-public interface Comparable {
-    int compareTo(Object o);
+public interface Comparable<T> {
+    int compareTo(T o);
 }
